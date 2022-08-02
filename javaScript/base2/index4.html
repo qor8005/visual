@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cotainer{margin: 100px;}
+        .ball{width: 100px; height: 100px;
+        background-color: darkorange;
+    border-radius: 50%;}
+
+
+    .ball.move{
+        animation: moving 4s linear infinite;
+    }
+    @keyframes moving{
+        0%{transform: translateX(0);}
+        100%{transform: translateX(1000px);}
+    }
+    </style>
+</head>
+<body>
+    <div class="cotainer">
+        <button id="add">add</button>
+        <button id="remove">remove</button>
+        <div class="ball"></div>
+    </div>
+    <script>
+        window.addEventListener('load',function(){
+            var addBtn=document.querySelector('#add');
+            var removeBtn=document.querySelector('#remove');
+            var ball=document.querySelector('.ball');
+
+            addBtn.addEventListener('click',function(){
+                ball.classList.add('move');
+            })
+
+            removeBtn.addEventListener('click',function(){
+                ball.classList.remove('move');
+            })
+        })
+    </script>
+</body>
+</html>

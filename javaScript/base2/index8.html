@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <ul>
+        <li>Hello</li>
+        <li>javaScript</li>
+    </ul> -->
+    <script>
+       //window.addEventListener('load',function(){}) 
+       window.onload=function(){
+        var list="";
+        //A += B;//A=A+B;
+        list += "<ul>";
+        list += "<li>Hello</li>";
+        list += "<li>javaScript</li>";
+        list += "</ul>";
+            console.log(list);
+
+            document.body.innerHTML=list;
+
+       };
+
+       /* window.onload라는 메서드를 오버라이딩(재정의) 해주면 되는데, 
+       해당 함수 내의 코드 스크립트는 웹브라우저 내의 모든 요소가 준비가 되어야 실행이 되도록 할수 있다. 
+       (웹브라우저 자체를 담당하는 window라는 객체가, 웹 문서를 불러올때, 
+       문서가 사용되는 시점에 실행되는 onload라는 함수를 내가 다시 재정의 한다는 개념이다.) */
+    </script>
+</body>
+</html>

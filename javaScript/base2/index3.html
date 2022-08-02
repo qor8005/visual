@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cotainer{margin: 100px;}
+        .ball{width: 100px; height: 100px;
+        background-color: darkorange;
+    border-radius: 50%;}
+    </style>
+</head>
+<body>
+    <div class="cotainer">
+        <button id="top">top</button>
+        <button id="bottom">bottom</button>
+        <div class="ball"></div>
+    </div>
+    <script>
+        window.addEventListener('load',function(){
+            var y=10;
+            var topBtn=document.querySelector('#top');
+            var bottomBtn=document.querySelector('#bottom');
+            var ball=document.querySelector('.ball');
+
+            console.log(ball);
+
+            topBtn.addEventListener('click',function(){
+                y=y - 20;
+                ball.style.marginTop = y + "px";
+            })
+            bottomBtn.addEventListener('click',function(){
+                y=y + 20;
+                ball.style.marginTop = y + "px";
+            })
+        })
+    </script>
+</body>
+</html>
