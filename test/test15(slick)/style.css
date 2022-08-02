@@ -1,0 +1,90 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+img{width: 100%;} /* 이미지 크기설정 */
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.영역{ /* 화면작게 설정 */
+    width: 60vw;
+    margin: 0 auto;
+}
+.영역   .slick{}
+
+.영역   .slick    .slick-arrow{  /* 앞뒤 화살표 위치설정 */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0px;
+    line-height: 0;
+    border: none;
+    width: 30px;
+    height: 30px;
+    background: none;
+}
+.영역   .slick  .slick-prev{  /* 전으로가기 화살표위치 설정 */
+    z-index: 100;  /* z축 설정: 아래있는걸 위로 */
+    left: 5%;
+    cursor: pointer;
+}
+.영역   .slick  .slick-prev:before{
+    /* Fontawesome */
+    content: "\f053";  /* 화살표 모양설정 */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+.영역   .slick  .slick-next{
+    right: 5%;   /* 앞으로가기 화살표위치 설정 */
+    left: auto;  /* 걸었던 값을 풀어준다 */
+    cursor: pointer;  /* 클릭할떄 모양변경 */
+}
+
+.영역   .slick  .slick-next:before{
+    /* Fontawesome */
+    content: "\f054";  /* 화살표 모양설정 */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+
+.영역   .slick  .slick-dots{
+    position: absolute;  /* 속성에 변화가 생김 자식의 공간만 차지, 자식이flot이 있어도 깨지지 않음 공간을 다시 설정한다. */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+   /*  overflow: hidden; // 부모가 꺠지는 형상을 막아준다  
+    width: 130px;     //부모대신에 자식을 잡는다. 그럼 밑에 닷버튼이 안보임
+    margin: 0 auto; */
+}
+.영역   .slick  .slick-dots li{  /* 닷 모양 설정 */
+    float: left;
+    list-style: none;
+    width: 12px;
+    height: 12px;
+    background-color: #dedede;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: 0.5s;
+}
+.영역   .slick  .slick-dots li.slick-active{  /* 현제 떠있는 사진을 닷에서 표시한다. */
+    width: 22px;
+    background-color:red;
+    border-radius: 8px;
+}
+.영역   .slick  .slick-dots li button{  /* 닷 숫자를 사라지게 한다. */
+    font-size: 0;
+    line-height: 0;
+    background: none;
+    border: none;
+}
+
+.fontawesome i {  /* 폰트를 넣을수있다 */
+    color: blueviolet;
+    font-size: 30px;
+}

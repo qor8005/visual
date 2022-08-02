@@ -1,0 +1,101 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+
+.배너{}
+.배너   .your-class{
+}
+.배너   .your-class .slick-slide{
+    height: 425px
+}
+.배너   .your-class .yc1{
+    background-image: url(img/Kings_1920774.jpg);
+    background-size: cover;
+}
+.배너   .your-class .yc2{
+    background-image: url(img/Mat_1920774.jpg);
+    background-size: cover;
+}
+.배너   .your-class .yc3{
+    background-image: url(img/West_1920774.jpg);
+    background-size: cover;
+}
+
+.배너   .your-class .slick-arrow{
+    position: absolute;
+    z-index: 50;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0;
+    line-height: 0;
+    border: none;
+    width: 30px;
+    height: 40px;
+    background: none;
+    transition: 0.3s;
+}
+
+.배너   .your-class .slick-prev{
+    left: 5%;
+    cursor: pointer;
+}
+.배너   .your-class .slick-prev:before{
+    /* Fontawesome */
+    content: "\f060";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 30px;
+    color: #fff;
+}
+.배너   .your-class .slick-prev:hover:before{
+    color:aqua;
+}
+
+
+
+.배너   .your-class .slick-next{
+    right: 5%;
+    cursor: pointer;
+}
+.배너   .your-class .slick-next:before{
+    /* Fontawesome */
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;   
+    font-size: 30px;
+    color: #fff;
+}
+.배너   .your-class .slick-next:hover:before{
+    color: aqua;
+}
+
+
+
+.배너   .your-class .slick-dots{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  /* 자기몸의 반 */
+    bottom: 10px;
+}
+.배너   .your-class .slick-dots li{
+    float: left;   /* //가로로 정렬 */
+    list-style: none;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    background-color: #dedede;
+    margin: 0 5px;
+    border-radius: 50%;
+}
+.배너   .your-class .slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    background: none;
+    border:none;
+}
+
+.배너   .your-class .slick-dots li.slick-active{
+    background-color: blue;
+    border: 8px;
+    width: 20px;
+}

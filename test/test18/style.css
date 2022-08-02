@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+/* font-family: 'Oswald', sans-serif; */
+/* 1.googlefonts */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+    /* 2.googlefonts */
+}
+
+#wrap{
+    background: url(images/bg-main.jpg)no-repeat; /* 배경사진 */
+    height: 100vh; /* 화면에 보이는 크기 */
+}
+.slick {}
+.slick>div {}
+.slick .slick-slide{
+    position: relative; /* 자기 자신을 기준으로 설정 */
+    height: 100vh; /* 화면에 보이는 크기 */
+    overflow: hidden; /* 화면에 초과하는거 안나오게 */
+}
+
+
+.slick .slick-slide h2 {
+    position: absolute;
+    font-size: 230px; /* 글자크기 */
+    letter-spacing: 30px; /* 자간 */
+    line-height: 270px; /* 글자높이 */
+    transform: translateX(-200px); /* 글자왼쪽에서 이동하게 */
+    opacity: 0;
+    transition: 1.5s 0.7s; /* 나오는 시간, 딜레이 시간 */
+    color: #fff;
+}
+.slick .slick-slide.slick-active h2{
+    transform: translateX(0px); /* 글자원위치 */
+    opacity: 1;   
+}
+
+
+.slick .slick-slide img {
+    width: 1000px; /* 사진크기 */
+    position: absolute; /* 글자위에 나오게 */
+    left: 0; top: 0; /* 사진크기 */
+    transform: translateX(200px); /* 페이지 넘어갈때 사진이동시 어디서 오는지 */
+    transition: 1.5s; /* 사진이동시간 */
+    opacity: 0; /* 투명 */
+}
+
+.slick .slick-slide.slick-active img { /* 현제 보는 페이지 */
+    transform: translateX(0px); /* 페이지 넘어갈때 사진이동시 원위치 */
+    opacity: 1; /* 보이게함 */
+}
+
+
+.slick .slick-slide .right {
+    position: absolute;
+    right: 10%; top: 15%;
+    width: 400px;
+    height: 400px;
+    background: #ccc;
+    transform:translateY(200px);
+    /* transform:rotate(100deg); */
+    opacity: 0;
+    transition: 0.7s 1.5s;
+}
+
+.slick .slick-slide.slick-active .right{
+    transform:translateY(0px); /* 퍼지면서 나오게함 */
+    opacity: 1; /* 나오는게 부드러워진다. */
+    /* transform:rotate(0deg); */
+}
+
+
+.slick .slick-arrow{
+    position: absolute;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 0px;
+    height: 0;
+    width: 0;
+    background: blue;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+}
+.slick .slick-prev{
+    z-index: 20;
+    left: 0%;
+}
+.slick .slick-prev::before{
+    position: absolute;
+    left: 0; top: 0;
+    content: "\f053";
+    width: 30px;
+    height: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: green;
+}
+.slick .slick-next{right: 0%; z-index: 20;}
+.slick .slick-next::before{
+    position: absolute;
+    right: 0; top: 0;
+    content: "\f054";
+    width: 30px;
+    height: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    cursor: pointer;
+    background-color: green;
+}

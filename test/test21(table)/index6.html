@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    *{margin: 0;padding: 0;}
+    .table{width: 60%; border: 1px solid red; padding: 20px;}
+    .table table{width: 100%; border: 1px solid blue; border-collapse: collapse;
+    text-align: center;}
+    .table table th,
+    .table table td{border: 1px solid green;}
+    .table table th{background-color: coral;}
+    .table table thead{background-color: #000;}
+    
+</style>
+
+
+</head>
+<body>
+    <div class="table">
+        <table>
+            <caption>제목입니다.</caption>
+            <colgroup> <!-- 표 세로로 색깔줌 -->
+            <col style="background-color: skyblue;"> <!-- 표 세로로1 -->
+            <col> <!-- 표 세로로2 -->
+            <col style="background-color: skyblue;"> <!-- 표 세로로3 -->
+            <col> <!-- 표 세로로4 -->
+            </colgroup>
+            <thead> <!-- 표 첫번째줄 가로로 -->
+                <tr>
+                    <th>제목1</th>
+                    <th>제목2</th>
+                    <th>제목3</th>
+                    <th>제목4</th>
+    
+                </tr>
+            </thead>
+            <tbody> <!-- 표 세로로 -->
+                <tr>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                    <td>td</td>
+                </tr>
+            </tbody>
+            <tfoot> <!-- 표 마지막줄 가로로 -->
+                <tr>
+                    <td>tf</td>
+                    <td>tf</td>
+                    <td>tf</td>
+                    <td>tf</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+    </div>
+</body>
+</html>
