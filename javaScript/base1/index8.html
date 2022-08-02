@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>dom 요소</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <h1 id="title">제목입니다.</h1>
+    <ul>
+        <li>어서오세요</li>
+        <li>그린컴퓨터학원</li>
+    </ul>
+    <button id="click">눌러주세요</button>
+    <script>
+        var title=window.document.getElementById("title");
+        // 태그에 있는 id 속성을 사용하여 해당 태그에 접근하여 하고 싶은 작업을 할 때 쓰는 함수
+        var button=window.document.getElementById('click');
+        button.addEventListener("click",function(){
+// document의 특정요소(Id,class,tag 등등..) event(ex - click하면 함수를 실행하라, 
+// 마우스를 올리면 함수를 실행하라 등등.. )를 등록할 때 사용합니다.
+            title.textContent="딴따라라 제목~!!!!"
+            // 텍스트를 추가할 수 있는 매우 간단한 프로퍼티입니다
+        })
+
+    // console.log(document);
+    window.console.log(document);
+    </script>
+</body>
+</html>

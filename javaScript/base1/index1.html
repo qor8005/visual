@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //한줄주석
+        /*여러줄
+        주석*/
+
+        var six = 6;  //우황의 내용을 좌황의 변수(그릇)에 저장
+        console.log(six); //컨솔에 나오게
+        //문장끝에 ;은 문장의 마침표의 역활(생략가능)
+
+        var two = 2;
+        document.write(six + two);  //화면에 나오게
+        document.write('<br>');
+        document.write(six * two + '<br>');
+        document.write(six - two + '<br>');
+        document.write(six / two + '<br>'); //나누기의 몫3
+        document.write(six % two + '<br>'); //나누기의 나머지 0
+        document.write('<br>');
+
+        var str1="자바스크립트";
+        var str2=" 기초";
+        
+        document.write(str1 + str2) //여기서 +는 연결연산자
+
+        document.write('<br>');
+
+        var time1 ="현재시간은 ";
+        var time2 =1;
+        var time3 =2;
+        var time4 ="시 입니다. ";
+
+        document.write(time1 + time2 + time3 + time4);//현재시간은 12시입니다.
+        //문자 + 숫자 -> 이때의 숫자는 문자가 된다
+        document.write(time2 + time3 + time4);//3시 입니다
+        //숫자 + 문자 -> 숫자와 문자의 연결
+    </script>
+</body>
+</html>
