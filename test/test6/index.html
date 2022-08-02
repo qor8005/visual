@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>정렬</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .아빠{background-color: #ADCF9F;
+            width: 900px;
+        }
+        .치매약::after{content: "";display:block;
+        clear:both;}
+        .아빠 >.첫째자식{
+            float: left;
+            background-color: #A084CF;
+            width: 300px;
+        }
+        .아빠  .둘째자식{
+            float: right;
+            width: 300px;
+            background-color: #ffc18e;
+        }
+        .아빠  .둘째자식 span{font-weight: bold;color: red;}  
+        /* 인라인요소:글자와 같은성질 
+        인라인요소안에 블록요소 못들어감
+        블록요소안에는 블록요소들어감, 인라인요소 들어감 */
+        .아빠  .세째자식{
+            float: right;
+            width: 300px;
+            background-color: #1F4690;
+            
+        }
+        .아빠 .치매약{
+            clear:both;
+        }
+        .작은아빠{background-color: brown;}
+    </style>
+</head>
+<body>
+    <div class="아빠 치매약">
+        <div class="첫째자식">첫째자식</div>
+        <div class="둘째자식"><span>둘째</span>자식</div>
+        <div class="세째자식">세째자식</div>
+    </div>
+    <div class="작은아빠">작은아빠</div>
+</body>
+</html>

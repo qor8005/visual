@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목임</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .영자{
+            color: red;
+            background-color: green;
+            width: 300px;
+            margin: auto;
+            text-align: center;
+            padding:  20px 0px 20px 40px;
+            /* 값 3개= 상 우 아래 좌 
+            값 3개= 상 좌우 아래
+            값 2개= 상하 좌우
+            값 1개= 상하좌우 */
+            letter-spacing: 50px;
+            border: 5px solid blue;
+            box-sizing: border-box;
+            font-size: 70px;
+            font-weight: bold;
+            background-image: url(img.jpg);
+            background-size: 100px;
+            /* cover는 일순위가 넓이에 맞춤, 높이가 부족하면 비율을 유지하면 넓이가 늘어나서 높이를 커버합니다. (배경화면을 덮는다.) 
+            contain는 이미가 온전히 나옴 */
+            background-repeat: no-repeat;  /* 이미지 중복 못하게함 */
+            background-position: center;
+            transition: 0.5s  /* 애니메이션에 시간을 부여; */
+            
+        }
+
+        .영자:hover{ /* 마우스를 올리면 */
+            background-size: 120%;
+        }
+    </style>
+</head>
+<body>
+    <div class="영자">
+        글자
+    </div>
+</body>
+</html>

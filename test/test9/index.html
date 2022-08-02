@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .약을든남자::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .만일 {
+            background-color: darkcyan;
+            margin: 30px auto;
+            padding: 20px;
+            width: 900px;
+            text-align: center;
+        }
+
+        .만일>div {
+            width: 32%;
+            float: left;
+            padding: 20px 0px;
+            margin-right: 2%;
+        }
+
+        .만일 .만일첫째 {
+            background-color: aqua;
+        }
+
+        .만일 .만일둘째 {
+            background-color: blue;
+        }
+
+        .만일 .만일세째 {
+            background-color: blueviolet;
+            margin-right: 0%;
+        }
+
+        .만이 {
+            background-color: darkgrey;
+            margin: 30px auto;
+            width: 900px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .만이>div {
+            width: 23.5%;
+            float: left;
+            padding: 20px 0;
+            margin-right: 2%;
+        }
+
+        /* margin의 상하는 큰값이 적용된다. */
+        .만이 .만이첫째 {
+            background-color: brown;
+        }
+
+        .만이 .만이둘째 {
+            background-color: chartreuse;
+        }
+
+        .만이 .만이세째 {
+            background-color: coral;
+        }
+
+        .만이 .만이네째 {
+            background-color: crimson;
+            margin-right: 0%;
+        }
+
+        .만삼 {
+            background-color: lightseagreen;
+            width: 900px;
+            text-align: center;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .만삼>div {
+            width: 49%;
+            float: left;
+            padding: 20px 0;
+            margin-right: 2%;
+        }
+
+        .만삼 .만삼첫째 {
+            background-color: blueviolet;
+            transition: 1s;
+        }
+
+        .만삼   .만삼첫째:hover{
+            background-color: aqua;
+            color: red;
+        }
+
+        .만삼   .만삼둘째 {
+            background-color: chocolate;
+            margin-right: 0%;
+            background-image: url(img1.jpg);
+            background-size: 50px;
+            transition: 2s;
+        }
+
+        .만삼   .만삼둘째:hover{
+            background-image: url(img.jpg);
+        }
+
+        
+
+        .만사 {
+            background-color: blue;
+            width: 900px;
+            text-align: center;
+            padding: 20px;
+            margin: 30px auto;
+        }
+
+        .만사>div {
+            width: 18.4%;
+            float: left;
+            padding: 20px 0;
+            margin-right: 2%;
+            transition: 0.5s;
+        }
+
+        .만사>div:hover{border-radius: 50px;}
+
+        .만사 .만사첫째 {
+            background-color: blueviolet;
+        }
+
+        .만사 .만사둘째 {
+            background-color: aqua;
+        }
+
+        .만사 .만사세째 {
+            background-color: burlywood;
+        }
+
+        .만사 .만사네째 {
+            background-color: chartreuse;
+        }
+
+        .만사 .만사다섯째 {
+            background-color: darkblue;
+            margin-right: 0%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="만일 약을든남자">
+        <div class="만일첫째">만일첫째</div>
+        <div class="만일둘째">만일둘째</div>
+        <div class="만일세째">만일세째</div>
+    </div>
+    <div class="만이 약을든남자">
+        <div class="만이첫째">만이첫째</div>
+        <div class="만이둘째">만이둘째</div>
+        <div class="만이세째">만이세째</div>
+        <div class="만이네째">만이네째</div>
+    </div>
+    <div class="만삼 약을든남자">
+        <div class="만삼첫째">만삼첫째</div>
+            
+        <div class="만삼둘째">만삼둘째</div>
+    </div>
+    <div class="만사 약을든남자">
+        <div class="만사첫째">만사첫째</div>
+        <div class="만사둘째">만사둘째</div>
+        <div class="만사세째">만사세째</div>
+        <div class="만사네째">만사네째</div>
+        <div class="만사다섯째">만사다섯째</div>
+    </div>
+</body>
+
+</html>

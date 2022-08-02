@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>정렬</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .아빠{background-color: aquamarine;
+            width: 900px;
+        }
+        .아빠 >.첫째자식{
+            float: right;
+            background-color: beige;
+            width: 300px;
+        }  /* > 자식중에서 찾는다 */
+        .아빠  .둘째자식{
+            float: right;
+            width: 300px;
+            background-color: blue;
+        }  /* 띄워쓰기는 자손중에서 찾는다 */
+        .아빠  .세째자식{
+            float: right;
+            width: 300px;
+            background-color: blueviolet;
+            /* ★ block요소
+            부모의 넓이를 모두 차지 -> display:block; */
+        }
+        .아빠 .치매약{
+            clear:both;
+        }
+        .작은아빠{background-color: brown;}
+    </style>
+</head>
+<body>
+    <div class="아빠">
+        <div class="첫째자식">첫째자식</div>
+        <div class="둘째자식">둘째자식</div>
+        <div class="세째자식">세째자식</div> <!-- 알트 누르면서 마우스 클릭하면 1번에 글자변경 가능 -->
+        <div class="치매약"></div>
+        <div cclass="작은아빠">작은아빠</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+*{margin: 0; padding: 0;}
+.clear:after{content: "";
+display: block; clear: both;
+}
+
+.부모1{
+    background-color: green;
+    width: 1000px; margin: 30px auto;
+    padding: 20px; text-align: center;
+    color: #fff;
+}
+.부모1 .자식1{
+    position: relative;
+    background-color: red;
+    width: 32%; float: left;
+    padding: 40px 0;
+    margin-right: 2%;
+    background-image: url(https://icepipeled.com/wp-content/uploads/2020/03/1.-ICEPIPE_2020_4_PC_bg.png);
+    background-size: 103px;
+    height: 20px;
+}
+.부모1 .자식1 .나쁜자식{
+    background-color: rgb(17, 25, 17);
+    position: absolute;
+    left: 0; top: 0;
+    /* width: 100%; height: 100%; */
+    right: 0; bottom: 0;
+    background-image: url(https://img.hankyung.com/photo/202206/01.30339201.1.jpg);
+    background-size: cover;
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.부모1 .자식1:hover .나쁜자식{
+    transform: scaleX(1);/* 100% */
+}
+.부모1 .자식2{
+    position: relative;
+    background-color: rgb(25, 150, 191);
+    width: 32%; float: left;
+    padding: 40px 0;
+    margin-right: 2%;
+    height: 20px;
+    background-image: url(https://spnimage.edaily.co.kr/images/Photo/files/NP/S/2022/06/PS22061500081.jpg);
+    background-size: cover;
+}
+.부모1 .자식2 .나쁜자식{
+    background-color: rgb(17, 25, 17);
+    position: absolute;
+    left: 0; top: 0;
+    /* width: 100%; height: 100%; */
+    right: 0; bottom: 0;
+    background-image: url(https://img.hankyung.com/photo/202206/01.30339201.1.jpg);
+    background-size: cover;
+    opacity: 0;/* 투명도 1-100% , 0-안보임 */
+    transition: 0.3s;
+}
+.부모1 .자식2:hover .나쁜자식{
+    opacity: 1;
+}
+.부모1 .자식3{
+    position: relative;
+    background-color: rgb(222, 32, 203);
+    width: 32%; float: left;
+    padding: 40px 0;
+    height: 20px;
+    background-image: url(https://spnimage.edaily.co.kr/images/Photo/files/NP/S/2022/06/PS22061500081.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+.부모1 .자식3 .나쁜자식{
+    background-color: rgb(17, 25, 17);
+    position: absolute;
+    right: -100%; 
+     width: 100%; height: 100%; 
+    top: 0;
+    background-image: url(https://img.hankyung.com/photo/202206/01.30339201.1.jpg);
+    background-size: cover;
+    transition: 0.3s;
+}
+.부모1 .자식3:hover .나쁜자식{
+    right: 0;
+}
+
+
+
+.부모2{
+  width: 1000px;
+  background-color:chocolate;
+  margin: 30px auto;
+  padding: 20px;
+}
+.부모2 .강아지1{
+    position: relative;
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    background-color:rgb(30, 210, 66);
+    padding: 40px 0;
+    height: 20px;
+    overflow: hidden;
+}
+.부모2 .강아지1 .나쁜자식{
+    background-color: green;
+    position: absolute;
+    left: 0; top: 0; 
+    width: 100%; height: 100%;
+    background-image: url(https://img.hankyung.com/photo/202206/01.30339201.1.jpg);
+    background-size: cover;
+    transform: scale(0) rotate(720deg);
+    transition: 0.5s cubic-bezier(1, -0.09, 0.14, 1.31);
+    
+}
+.부모2 .강아지1:hover .나쁜자식{
+    transform: scale(1.05) rotate(0deg);
+}
+.부모2 .강아지2{
+    position: relative;
+    float: left;
+    width: 49%;
+    background-color:rgb(30, 36, 210);
+    padding: 40px 0;
+    overflow: hidden;
+    height: 20px;
+}
+
+.부모2 .강아지2 .나쁜자식{
+    background-color: green;
+    position: absolute;
+    left: 0; top: 0; 
+    width: 100%; height: 100%;
+    background-image: url(https://img.hankyung.com/photo/202206/01.30339201.1.jpg);
+    background-size: cover;
+    transform: scale(1.05) rotate(0deg);
+    transition: 0.5s cubic-bezier(1, -0.09, 0.14, 1.31);
+    
+    
+}
+
+.부모2 .강아지2:hover .나쁜자식{
+    transform: scale(0) rotate(720deg);
+}

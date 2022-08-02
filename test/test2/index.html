@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>백진용</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .부모{
+            background-color: blue;
+        }
+        /* 주석처리 */
+        /* 띄워쓰기는 부모의 자손중에 첫째자식을 찾음 */
+        .부모 .첫째자식{min-height: 100px;
+        background-color: green;}
+    </style>
+</head>
+<body>
+    <div class="부모">
+        <div class="첫째자식">첫째자식</div>
+        <div class="둘째자식">
+            <a href="https://www.w3schools.com/" class="버튼">
+                둘째자식</a></div>
+    </div>
+</body>
+</html>
