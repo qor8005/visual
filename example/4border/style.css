@@ -1,0 +1,57 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+
+.loader{
+    position: relative;
+    background: #40407a;
+    height: 100vh;
+}
+.loader .loader_blob{
+    position: relative;
+    width: 30em;
+    height: 30em;
+    background: red;
+    left: calc(50% - 15em);
+    top: calc(50% - 15em);
+    overflow: hidden;
+
+    /* 수평h 수직v 왼쪽l 오른쪽r 윗쪽t 아래쪽b */
+    /* border-radius: 20px; tl tr br bl */
+    /* border-radius: 20px 50px; tl, br // tr bl */
+    /* border-radius: 20px / 50px; htl htr hbr hbl  //  vtl vtr vbr vbl */
+    /* border-radius: 87% 13% 50% 50% / 68% 9% 91% 32%  */
+    animation: go 6s linear infinite alternate;
+}
+
+
+.loader .ro{
+    position: absolute;
+    left: calc(50% - 15em); 
+    top: calc(50% - 15em);
+    width: 30em; height: 30em;
+    animation: rotate 6s linear infinite alternate;
+}
+
+
+.loader .ro .loader_blob2{
+    width: 32em;
+    height: 32em;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    animation: go 6s linear infinite alternate;
+}
+
+@keyframes go{
+    0%{border-radius: 87% 13% 50% 50% / 68% 9% 91% 32%;
+    transform: scale(0.98); }
+    50%{border-radius:33% 67% 50% 50% / 71% 86% 14% 29%;}
+    100%{border-radius:91% 9% 86% 14% / 18% 86% 14% 82% ;
+        transform: scale(1.02);}
+        /* https://9elements.github.io/fancy-border-radius/ */
+}
+
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
