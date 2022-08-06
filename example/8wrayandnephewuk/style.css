@@ -1,0 +1,40 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0;}
+/* :root{
+    --color : #f00;
+}
+h1{
+    background-color: var(--color);
+} */
+
+.move-img{
+    height: 100vh;
+    /* 내영역안에서 자식을 정중앙에 위치 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 450px;
+}
+.card span{
+    position: absolute;
+    top: 0; width: calc(100% / 6);
+    height: 100%;
+    left: calc(100% / 6*var(--i));
+}
+
+.card img{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%;
+    pointer-events: none;/* 이미지대신 스펜이 클릭 */
+    opacity: 0;
+}
+
+.card span:hover + img{opacity: 1;} /* 딱 내동생 이미지 */
+.card img:nth-of-type(1){
+    opacity: 1;
+}
