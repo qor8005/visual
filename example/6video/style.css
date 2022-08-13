@@ -52,10 +52,12 @@ body{
 }
 
 .videos{display: flex;
-    flex-wrap: wrap;}
+    flex-wrap: wrap;
+    /* Flex 아이템이 Flex 컨테이너의 끝에 닿으면 문자의 표기 방향에 따라 줄 바꿈합니다. */
+}
 .videos .video{
     width: 23%; margin: 1%;
-    background-repeat: 4px;
+    border-radius: 4px;
     overflow: hidden;
     position: relative;
     padding-top: 9%;
