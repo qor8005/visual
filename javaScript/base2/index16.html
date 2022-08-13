@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        for (var i = 0; i <= 10; i++) {
+            for (var j = 0; j <= i; j++){
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+
+
+        for (var i = 0; i <= 10; i++) {
+            for (var j = 10; j > i; j--){
+                document.write("&nbsp"); //&nbsp 한칸 띄워쓰기
+            }
+            for (var k = 0; k < 2 * i - 1; k++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        } 
+
+
+        /* var 별 = '';
+        for (var i = 0; i <= 10; i++) {
+            for (var j = 0; j <= i; j++) {
+                별 += '*';
+            }
+            document.write(별 + '<br>');
+            별 = "";  //누적방지
+        } */
+
+
+        /* var output = '';
+        for (var i = 0; i < 5; i++) {
+            for (var j = 5; j > i; j--) {
+                output += '-';
+            }
+            document.write(output + '<br>');
+            output = "";
+        } */
+
+
+        /* // 변수를 선언합니다.
+        var output = '';
+        // 반복문   // 1,2
+        for (var i = 0; i < 15; i++) {
+            for (var j = 15; j > i; j--) {
+                //output += '&nbsp;';
+                output += '-'; //15,14,13
+
+            }
+            for (var k = 0; k < 2 * i - 1; k++) {
+                output += '*'; //0,1,3
+
+
+            }
+            // 출력합니다.
+
+            document.write(output);
+            document.write('<br>');
+            output = ""
+        } */
+    </script>
+</body>
+
+</html>
